@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: orange;
+  background-color: rgb(26, 26, 26);
   color: white;
   padding: 1em;
   text-align: center;
@@ -96,6 +96,7 @@ footer p {
 
 
 .nogomet-glavni {
+  font-size: larger;
   background-color: white;
   padding: 25px;
   margin: 20px auto;
@@ -105,6 +106,22 @@ footer p {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.bavimli {
+  font-size: larger;
+  background-color: white;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.bavimli-detalji {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
 .nogomet-detalji {
   background-color: #f9f9f9;
   padding: 20px;
@@ -197,4 +214,28 @@ footer p {
 .razmak-izmedu2 {
   margin: 40px 0; /* razmak iznad i ispod */
   text-align: center;
+}
+
+.big-audio-player .rhap_main-controls-button {
+  font-size: 2rem; /* Bigger play/pause button */
+  width: 60px;
+  height: 60px;
+}
+
+.big-audio-player .rhap_volume-button {
+  font-size: 1.8rem; /* Bigger mute/unmute button */
+  width: 50px;
+  height: 50px;
+}
+
+.big-audio-player .rhap_controls-section {
+  align-items: center;
+}
+
+.big-audio-player .rhap_container {
+  padding: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }

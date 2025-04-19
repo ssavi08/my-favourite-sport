@@ -9,21 +9,11 @@ const Vaterpolo = () => {
   return (
     <section id="vaterpolo-glavni" className="main-section">
       
-      <p><h3>Lukin drugi izbor:</h3></p>
-      <h1 style={{cursor: "pointer", display: "inline"}} onClick={() => setInfoOpen(true)}>Vaterpolo</h1>
-      
-      <div className="text-center mt-3">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/vwiMWetj5hk"
-          title="Vaterpolo video"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
+      <div style={{textAlign: "center"}}>
+        <h3>Lukin drugi izbor:</h3>
+        <h1 style={{ cursor: "pointer", display: "inline-block" }} onClick={() => setInfoOpen(true)}>Vaterpolo</h1>
       </div>
-
+      
       <div className="text-center mt-3" style={{ display: "flex", justifyContent: "center", gap: "30px", flexWrap: "wrap" }}>
         <a href={vaterpolo1} target="_blank" rel="noopener noreferrer">
           <img src={vaterpolo1} alt="Vaterpolo 1" style={{ objectFit:"cover", height:"500px", width: "300px", cursor: "pointer", borderRadius: "10px" }} />

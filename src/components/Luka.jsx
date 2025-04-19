@@ -15,8 +15,8 @@ const Luka = () => {
             style={{ width: "150px", height:"150px", borderRadius: "10px", cursor: "pointer" }}
           />
         </a>
-        <p >
-          <strong style={{cursor: "pointer"}} onClick={() => setInfoOpen(true)}>Luka Bilandžić</strong>
+        <p style={{ textAlign: "center" }}>
+          <strong style={{ cursor: "pointer"}} onClick={() => setInfoOpen(true)}>Luka Bilandžić</strong>
         </p>
       </div>
 
@@ -24,7 +24,7 @@ const Luka = () => {
         <div className="modal-overlay" onClick={() => setInfoOpen(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
           <p><h3>O meni</h3></p>
-            <ul style={{ textAlign:"left", listStyleType: "none", padding: 0, marginTop: "10px" }}>
+            <ul style={{ lineHeight: "2", textAlign:"left", listStyleType: "none", padding: 0, marginTop: "10px" }}>
               <li><strong>Datum rođenja: </strong>03.12.2001.</li>
               <li><strong>Mjesto stanovanja: </strong>Vukovar</li>
               <li><strong>Hobi: </strong>trčanje, programiranje</li>

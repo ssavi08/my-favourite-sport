@@ -12,10 +12,10 @@ const Sandro = () => {
             id="mojaSlika"
             src={Sandro1}
             alt="Sandro slika"
-            style={{ width: "150px", height:"150px", borderRadius: "10px", cursor: "pointer" }}
+            style={{ objectFit: 'cover', width: "150px", height:"150px", borderRadius: "10px", cursor: "pointer" }}
           />
         </a>
-        <p>
+        <p style={{ textAlign: "center" }}>
           <strong style={{cursor: "pointer"}} onClick={() => setInfoOpen(true)}>Sandro Savi</strong>
         </p>
       </div>
@@ -24,7 +24,7 @@ const Sandro = () => {
         <div className="modal-overlay" onClick={() => setInfoOpen(false)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <p><h3>O meni</h3></p>
-            <ul style={{ textAlign:"left", listStyleType: "none", padding: 0, marginTop: "10px" }}>
+            <ul style={{ lineHeight: "2",textAlign:"left", listStyleType: "none", padding: 0, marginTop: "10px" }}>
               <li><strong>Datum rođenja: </strong>21.08.2002.</li>
               <li><strong>Mjesto stanovanja: </strong>Nova Gradiška</li>
               <li><strong>Hobi: </strong>teretana, igrice</li>
